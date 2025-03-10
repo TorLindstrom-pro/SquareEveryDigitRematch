@@ -4,6 +4,9 @@ public class Kata
 {
 	public static int SquareDigits(int i)
 	{
-		return i * i;
+		var squares = i.ToString()
+			.Select(c => int.Parse("" + c))
+			.Select(digit => digit * digit);
+		return int.Parse(string.Join("", squares));
 	}
 }

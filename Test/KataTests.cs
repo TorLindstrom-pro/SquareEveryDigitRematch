@@ -15,4 +15,14 @@ public class KataTests
         // assert
         Assert.Equal(expectedResult, result);
     }
+
+    [Fact(DisplayName = "Each digit is squared and concatenated in result")]
+    public void EachDigitIsSquaredAndConcatenated()
+    {
+        // act
+        var result = Kata.SquareDigits(12);
+        
+        // assert
+        Assert.Equal(14, result);
+    }
 }
