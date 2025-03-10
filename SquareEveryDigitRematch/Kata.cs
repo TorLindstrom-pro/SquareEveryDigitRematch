@@ -4,15 +4,15 @@ namespace SquareEveryDigitRematch;
 
 public class Kata
 {
-	public static int SquareDigits(int i)
+	public static int SquareDigits(int number)
 	{
-		var squares = i
+		var squares = number
 			.ToString()
 			.Select(char.GetNumericValue)
 			.Select(digit => digit * digit);
 
-		var joinedSquares = string.Concat(squares);
+		var concatenatedSquares = string.Concat(squares);
 		
-		return int.Parse(joinedSquares);
+		return int.Parse(concatenatedSquares);
 	}
 }
