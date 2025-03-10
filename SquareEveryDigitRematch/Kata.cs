@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace SquareEveryDigitRematch;
 
 public class Kata
