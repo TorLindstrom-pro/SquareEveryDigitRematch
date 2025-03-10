@@ -11,7 +11,7 @@ public class Kata
 			.Select(char.GetNumericValue)
 			.Select(digit => digit * digit);
 
-		var joinedSquares = string.Join("", squares);
+		var joinedSquares = string.Concat(squares);
 		
 		return int.Parse(joinedSquares);
 	}
