@@ -8,7 +8,7 @@ public class Kata
 	{
 		var squares = i
 			.ToString()
-			.Select(c => int.Parse("" + c))
+			.Select(char.GetNumericValue)
 			.Select(digit => digit * digit);
 
 		var joinedSquares = string.Join("", squares);
